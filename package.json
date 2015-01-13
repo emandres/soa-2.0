@@ -1,0 +1,23 @@
+{
+  "name": "pizza",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pizza.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emandres/soa-2.0.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emandres/soa-2.0/issues"
+  },
+  "homepage": "https://github.com/emandres/soa-2.0",
+  "dependencies": {
+	"amqp": "0.2.0",
+	"uuid": "2.0.1"
+  }
+}

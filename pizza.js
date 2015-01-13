@@ -1,23 +1,13 @@
-/*
-  ip: 54.149.117.183
-  username: craftsman
-  password: utahsc2015
-
-  pizzarequested.v1
-  {
-    "Name": "",
-    "Address": "",
-    "Toppings": [""]
-    }
-*/
-
 var uuid = require('uuid'),
     amqp = require('amqp');
 
+var creds = require('./creds');
+console.log(creds);
+
 var connection = amqp.createConnection({
 	host: '54.149.117.183',
-	login: 'craftsman',
-	password: 'utahsc2015'
+	login: creds.login,
+	password: creds.password
 });
 
 connection.on('error', function(err) {
